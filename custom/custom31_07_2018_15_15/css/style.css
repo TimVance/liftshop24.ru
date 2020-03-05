@@ -620,6 +620,11 @@ input {
     border-radius: 3px;
     width: 80%;
     max-width: 270px;
+    outline: none;
+}
+
+.js_cart_one_click_form .order_form_param10 {
+    display: none;
 }
 
 textarea {
@@ -810,6 +815,7 @@ footer a:hover {
     font-size: 18px;
     font-weight: bold;
     color: #f05557;
+    margin-bottom: 5px;
 }
 
 .jq-number__field {
@@ -863,19 +869,63 @@ footer a:hover {
     margin-top: 20px;
     color: #fff;
     font-size: 18px;
+    height: 45px;
     max-width: 200px;
     background: url(../img/cart_info2.png) no-repeat #f15557;
-    background-position: 30px 10px;
+    background-position: 30px 14px;
     border: none;
     cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
     -webkit-transition: background .3s ease;
     -o-transition: background .3s ease;
     transition: background .3s ease;
 }
 
+.action-know-price {
+    border: 2px solid #ef5557;
+    padding: 6px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 45px;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    vertical-align: -7px;
+    display: inline-block;
+}
+
+.action-know-price:hover {
+    background-color: #ef5557;
+    color: #fff;
+}
+
+.action-know-price:hover svg {
+    color: #fff;
+}
+
+.action-know-price svg {
+    width: 20px;
+    height: 20px;
+    color: #ef5557;
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
 .inCart:hover {
     background: url(../img/cart_info2.png) no-repeat #444;
-    background-position: 30px 10px;
+    background-position: 30px 14px;
 }
 
 .jq-number__field {
@@ -914,8 +964,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.shop_one_click {
-
+.shop_one_click .oneclickbutton {
+    font-size: 14px;
 }
 
 .shop_one_click:hover {
@@ -1073,6 +1123,7 @@ footer a:hover {
 
 .oneclickbuttonrow {
     margin: auto;
+    font-size: 13px;
 }
 
 .shop-item-info1 {
@@ -1640,7 +1691,8 @@ nobr .cart_count_minus, nobr .cart_count_plus {
     padding: 10px;
     color: #fff;
     width: 45%;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     cursor: pointer;
     text-align: center;
     -webkit-transition: background .3s;

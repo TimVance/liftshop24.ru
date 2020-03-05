@@ -284,4 +284,10 @@
 	.js_ab .params-oborud li {
 		padding-left: 20px;
 	}
+	.action-know-price {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		max-width: 200px;
+	}
 }

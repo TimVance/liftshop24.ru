@@ -61,7 +61,7 @@ if (! empty($result["rows_param"]))
 
 			case 'textarea':
 				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<textarea name="p'.$row["id"].'" rows="10" cols="30">'.$value.'</textarea>';
+				<textarea name="p'.$row["id"].'">'.$value.'</textarea>';
 				break;
 
 			case 'date':

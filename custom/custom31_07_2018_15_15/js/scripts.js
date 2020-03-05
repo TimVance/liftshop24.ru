@@ -16,6 +16,13 @@ $(document).ready(function() {
         $(this).parents('.shop-item').find('.cart_one_click').addClass('callbackformactive');
         $(this).parents('.shop-item-right').find('.cart_one_click').addClass('callbackformactive');
     });
+    $("body").on("click", ".action-know-price", function () {
+        $(".modalbg").addClass("modalbgactive");
+        var form = $(this).parents('.shop-item-right').find('.cart_one_click');
+        form.addClass('callbackformactive');
+        form.find(".title").text('Заполните заявку');
+        form.find(".order_form_param10 textarea").val('Запрос цены');
+    });
     $("body").on('click', '.shop_buy .button', function() {
         $(".modalbg").addClass("modalbgactive");
         $(".successtocart").addClass("callbackformactive");
