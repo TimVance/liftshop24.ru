@@ -30,7 +30,7 @@ echo '
 <script type="text/javascript" src="'.BASE_PATH.Custom::path('js/jquery.maskedinput.js').'" charset="UTF-8"></script>
 <script type="text/javascript"  src="'.BASE_PATH.Custom::path('js/jquery.touchSwipe.min.js').'" charset="UTF-8"></script>
 <script type="text/javascript"  src="'.BASE_PATH.Custom::path('js/jquery.formstyler.js').'" charset="UTF-8"></script>
-<script type="text/javascript"  src="'.BASE_PATH.Custom::path('js/scripts.js').'?v=10" charset="UTF-8"></script>
+<script type="text/javascript"  src="'.BASE_PATH.Custom::path('js/scripts.js').'?v=11" charset="UTF-8"></script>
 <script type="text/javascript"  src="'.BASE_PATH.Custom::path('js/slick.min.js').'?v=1" charset="UTF-8"></script>
 <script type="text/javascript"  src="'.BASE_PATH.Custom::path('js/jquery.prettyPhoto.js').'?v=1" charset="UTF-8"></script>
 <script src="'.BASE_PATH.File::compress('js/extsrc.js', 'js').'"></script>';
