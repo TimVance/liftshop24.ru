@@ -78,7 +78,7 @@ if (! empty($result["rows_param"]))
 				break;
 
 			case 'checkbox':
-				echo '<input name="p'.$row["id"].'" id="cart_'.$result["good_id"].'_p'.$row["id"].'" value="1" type="checkbox" '.($value ? ' checked' : '').'><label for="cart_'.$result["good_id"].'_p'.$row["id"].'">'.$row["name"].($row["required"] ? '' : '').'</label>';
+				echo '<input name="p'.$row["id"].'" id="cart_'.$result["good_id"].'_p'.$row["id"].'" value="1" type="checkbox"><label for="cart_'.$result["good_id"].'_p'.$row["id"].'">'.$row["name"].($row["required"] ? '' : '').'</label>';
 				break;
 
 			case 'select':

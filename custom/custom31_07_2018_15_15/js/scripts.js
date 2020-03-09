@@ -21,7 +21,8 @@ $(document).ready(function() {
         var form = $(this).parents('.shop-item-right').find('.cart_one_click');
         form.addClass('callbackformactive');
         form.find(".title").text('Заполните заявку');
-        form.find(".order_form_param10 textarea").val('Запрос цены');
+        if (!form.find(".order_form_param10 label").hasClass("active"))
+            form.find(".order_form_param10 label").click().addClass("active");
     });
     $("body").on('click', '.shop_buy .button', function() {
         $(".modalbg").addClass("modalbgactive");
