@@ -43,7 +43,7 @@ if (!empty($result["rows"]))
 	else {
 		echo '<div class="shop-pane flexStart">';
         	$result['search'] = true;
-        	echo $this->get('rows','shop',$result);
+        	echo $this->get('list','shop',$result);
         echo '</div>';
 	}
         

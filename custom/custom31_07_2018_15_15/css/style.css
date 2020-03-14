@@ -2547,3 +2547,7 @@ a.return-back:hover {
 .tags a:hover {
     text-decoration: underline;
 }
+
+.js_shop_list {
+    width: 100%;
+}

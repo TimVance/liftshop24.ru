@@ -92,7 +92,6 @@ $(document).ready(function() {
         $('.data-load-search, .data-load-results').html('');
         var q = $(this).val();
         q = q.replace(/ /g, '+');
-        console.log(q);
         $('.bottomheader .data-load-search').load('/search/?module=search&searchword='+ q + ' .right .shop-pane', function(data) {
             $('.bottomheader .data-load-results').append($('.bottomheader .data-load-search .shop-item-title'));
         });
@@ -110,8 +109,8 @@ $(document).ready(function() {
     });
 
     $('.search_form .input_search').focus(function() {
-        if (count($(this).val()) > 0) {
-            $('.search_form .submit_search').click();
+        if ($(this).val() != '') {
+            //$('.search_form .submit_search').click();
             $(".data-load-results").fadeIn();
         }
     });
@@ -188,7 +187,8 @@ function autoLoadGoods(b) {
     if (page < end) {
         $('.numberpages').each(function(index, number) {
             if (parseInt($(number).attr('numberpage')) == parseInt(page) + 1) {
-                var coordinateitems = $(number).attr('href') + ' .shop_list_rows .shop-item';
+                console.log($(number).attr('href'));
+                var coordinateitems = encodeURI($(number).attr('href')) + ' .shop_list_rows .shop-item';
                 $('.dataload').load(coordinateitems, function(data) {
                     $('.shop_list_rows .shop-pane').append($('.dataload .shop-item'));
                     $('input').styler();

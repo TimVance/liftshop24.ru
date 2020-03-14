@@ -26,7 +26,7 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
-echo '<h3 class="titleblock">'.$this->diafan->_('Поиск по товарам').'</h3>';
+echo '<h3 class="titleblock">'.$this->diafan->_('Фильтр по товарам').'</h3>';
 
 echo '<div class="block shop-search">';
 
