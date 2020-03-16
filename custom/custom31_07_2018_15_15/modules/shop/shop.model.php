@@ -3335,7 +3335,8 @@ class Shop_model extends Model
         {
             $_REQUEST["name"] = $this->diafan->filter($_REQUEST, "string", "name");
             $getnav .= '&name='.$_REQUEST["name"];
-            $where .= " AND s.[name] LIKE '%".$_REQUEST['name']."%'";
+            $where = " AND s.[name] LIKE '%".$_REQUEST["name"]."%'";
+            //echo $where;
         }
 
         if(! empty($_REQUEST["brand"]) && $this->diafan->configmodules("search_brand"))
