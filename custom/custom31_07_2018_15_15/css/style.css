@@ -239,6 +239,7 @@ nav a:hover {
     -o-transition: box-shadow .3s;
     transition: box-shadow .3s;
     background: #fff;
+    margin-top: -1px;
 }
 
 .shop-search:hover,
@@ -2550,4 +2551,9 @@ a.return-back:hover {
 
 .js_shop_list {
     width: 100%;
+}
+
+.tags_block a {
+    font-size: 14px !important;
+    display: block;
 }
