@@ -31,6 +31,8 @@ if (! defined('DIAFAN'))
 				</div>
 				<h2 class="titleblock">Лидеры продаж</h2>
 				<insert name="show_block" module="shop" sort="sale" count="4" images="1">
+                <h2 class="titleblock">Новинки</h2>
+                <insert name="show_block" module="shop" sort="date" count="4" images="1">
 				<a href="/catalog/" class="linktocatalog">Полный каталог<i></i></a>
 				<h2 class="titleblock">Наши преимущества</h2>
 				<div class="whyme">

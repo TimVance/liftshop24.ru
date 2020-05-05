@@ -16,21 +16,24 @@ if($this->diafan->configmodules("redhelper_login", "consultant"))
 	echo "\n".'<meta http-equiv="X-UA-Compatible" content="IE=8">'
 	."\n".'<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"> ';
 }
-if($this->diafan->_site->canonical)
-{
-	if(substr($this->diafan->_site->canonical, 0, 4) != 'http')
-	{
-		if(substr($this->diafan->_site->canonical, 0, 1) == '/')
-		{
-			$this->diafan->_site->canonical = 'http'.(IS_HTTPS ? "s" : '').'://'.BASE_URL.$this->diafan->_site->canonical;
-		}
-		else
-		{
-			$this->diafan->_site->canonical = BASE_PATH_HREF.$this->diafan->_site->canonical;
-		}
-	}
-	echo "\n".'<link href="'.$this->diafan->_site->canonical.'" rel="canonical">';
-}
+//if($this->diafan->_site->canonical)
+//{
+//	if(substr($this->diafan->_site->canonical, 0, 4) != 'http')
+//	{
+//		if(substr($this->diafan->_site->canonical, 0, 1) == '/')
+//		{
+//			$this->diafan->_site->canonical = 'http'.(IS_HTTPS ? "s" : '').'://'.BASE_URL.$this->diafan->_site->canonical;
+//		}
+//		else
+//		{
+//			$this->diafan->_site->canonical = BASE_PATH_HREF.$this->diafan->_site->canonical;
+//		}
+//	}
+//	echo "\n".'<link href="'.$this->diafan->_site->canonical.'" rel="canonical">';
+//}
+
+$canonical = BASE_PATH_HREF.$this->diafan->_site->rewrite.'/';
+echo '<link rel="canonical" href="'.$canonical.'"/>';
 
 echo '
 <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">

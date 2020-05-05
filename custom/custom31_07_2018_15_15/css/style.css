@@ -2557,3 +2557,10 @@ a.return-back:hover {
     font-size: 14px !important;
     display: block;
 }
+
+.wrapcontacts .feedback_form .error_message {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
