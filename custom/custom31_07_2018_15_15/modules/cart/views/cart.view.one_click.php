@@ -45,18 +45,16 @@ if (! empty($result["rows_param"]))
 				break;
 
 			case 'text':
-				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<input type="text" name="p'.$row["id"].'" value="'.$value.'">';
+				echo '
+				<input placeholder="'.$row["name"].($row["required"] ? '*' : '').'" type="text" name="p'.$row["id"].'" value="'.$value.'">';
 				break;
 
 			case "phone":
-				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<input type="tel" name="p'.$row["id"].'" value="'.$value.'">';
+				echo '<input placeholder="'.$row["name"].($row["required"] ? '*' : '').'" type="tel" name="p'.$row["id"].'" value="'.$value.'">';
 				break;
 
 			case "email":
-				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<input type="email" name="p'.$row["id"].'" value="'.$value.'">';
+				echo '<input placeholder="'.$row["name"].($row["required"] ? '*' : '').'" type="email" name="p'.$row["id"].'" value="'.$value.'">';
 				break;
 
 			case 'textarea':

@@ -1568,6 +1568,13 @@ nobr {
 nobr .cart_count_minus, nobr .cart_count_plus {
     padding: 0;
     cursor: pointer;
+    display: inline-block;
+    width: 19px;
+    opacity: .5;
+}
+
+nobr > span:hover {
+    opacity: 1;
 }
 
 .cart_count .number {
@@ -1860,7 +1867,7 @@ nobr .cart_count_minus, nobr .cart_count_plus {
 .shop-photo-labels {
 	position: absolute;
 	left: 10px;
-	top: 20px;
+	top: 30px;
 }
 
 .shop-item-right .shop_one_click {
@@ -2563,4 +2570,14 @@ a.return-back:hover {
     font-size: 12px;
     margin-bottom: 10px;
     margin-top: -10px;
+}
+
+.shop-photo-labels img {
+    display: block;
+    margin-bottom: 5px;
+    opacity: .9;
+}
+
+.shop-item-left .shop-photo-labels {
+    left: 0;
 }

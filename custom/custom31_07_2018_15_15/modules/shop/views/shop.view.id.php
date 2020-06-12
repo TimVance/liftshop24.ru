@@ -20,7 +20,7 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
-echo '<div itemscope itemtype="http://schema.org/Product">';
+echo '<div class="itemscope-product" itemscope itemtype="http://schema.org/Product">';
 echo '<div class="js_shop_id js_shop shop shop-item-container flexBetween">';
 
 
@@ -31,6 +31,22 @@ if (!empty($result["img"]))
 {
 	echo '<div class="js_shop_all_img shop_all_img shop-item-big-images">';
 	echo '<div class="zoomic"></div>';
+
+    echo '<span class="shop-photo-labels">';
+    if (!empty($result['hit']))
+    {
+        echo '<img src="'.BASE_PATH.Custom::path('img/label_hot_big.png').'">';
+    }
+    if (!empty($result['action']))
+    {
+        echo '<img src="'.BASE_PATH.Custom::path('img/label_special_big.png').'">';
+    }
+    if (!empty($result['new']))
+    {
+        echo '<img src="'.BASE_PATH.Custom::path('img/label_new_big.png').'">';
+    }
+    echo '</span>';
+
 	//echo '<div class="fotorama" data-autoplay="true" data-nav="thumbs" data-maxwidth="435" data-width="100%">';
 	$k = 0;
 	foreach ($result["img"] as $img)

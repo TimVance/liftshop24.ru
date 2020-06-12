@@ -82,6 +82,7 @@
 	.shop-item-right {
 		margin-top: 20px;
 		text-align: center;
+		padding-left: 0px;
 	}
 	.mainslider {
 		max-width: 100%;
@@ -101,6 +102,9 @@
 	}
 	.loupe {
 	    display: none !important;
+	}
+	.itemscope-product {
+		margin-bottom: 20px;
 	}
 }
 @media screen and (max-width: 760px) {
@@ -232,6 +236,9 @@
 	.list-cabins-models > .ab > .ab_img > a {
 		margin: 0;
 	}
+	.bottomaddress, .bottomphone, .bottomemail {
+		padding-left: 0;
+	}
 }
 @media screen and (max-width: 500px) {
 	.shop-item-inside .inCartrow {
@@ -289,5 +296,9 @@
 		margin-left: auto;
 		display: block;
 		max-width: 200px;
+		margin-bottom: 10px;
+	}
+	.js_shop_one_click {
+		margin-bottom: 10px;
 	}
 }
