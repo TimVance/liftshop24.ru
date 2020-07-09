@@ -1282,7 +1282,9 @@ footer a:hover {
     margin-top: 20px;
 }
 
-.callbackform .button, .cart_one_click input[type="button"] {
+.callbackform .button,
+.cart_one_click input[type="button"],
+.feedback_page .button {
     background: #f05557;
     color: #fff;
     font-size: 18px;
@@ -1300,8 +1302,22 @@ footer a:hover {
     margin: auto;
 }
 
-.callbackform .button:hover, .cart_one_click input[type="button"]:hover {
+.callbackform .button:hover,
+.cart_one_click input[type="button"]:hover,
+.feedback_page .button:hover {
     background: #4a4a4a;
+}
+
+.feedback_page .privacy-info {
+    text-align: center !important;
+}
+
+.feedback_page .captcha {
+    margin-bottom: 10px;
+}
+
+.feedback_page .captcha .error_message {
+    margin-top: 0 !important;
 }
 
 .callbackform .error_message, .cart_one_click .error_message {
@@ -1563,6 +1579,7 @@ nobr {
     border-radius: 10px;
     height: 22px;
     display: block;
+    width: 96px;
 }
 
 nobr .cart_count_minus, nobr .cart_count_plus {
@@ -2580,4 +2597,8 @@ a.return-back:hover {
 
 .shop-item-left .shop-photo-labels {
     left: 0;
+}
+
+.feedback_page textarea {
+    padding: 10px;
 }

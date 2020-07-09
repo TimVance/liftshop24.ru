@@ -27,7 +27,7 @@ if (! empty($result["text"]))
 }
 
 echo '
-<div class="feedback_form">
+<div class="feedback_form feedback_page">
 <form method="POST" enctype="multipart/form-data" action="" class="ajax">
 <input type="hidden" name="module" value="feedback">
 <input type="hidden" name="action" value="add">
@@ -54,23 +54,19 @@ if (! empty($result["rows"]))
 				break;
 
 			case 'text':
-				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<input type="text" name="p'.$row["id"].'" value="">';
+				echo '<input type="text" name="p'.$row["id"].'" value="" placeholder="'.$row["name"].'">';
 				break;
 
 			case "email":
-				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<input type="email" name="p'.$row["id"].'" value="">';
+				echo '<input type="email" name="p'.$row["id"].'" value="" placeholder="'.$row["name"].'">';
 				break;
 
 			case "phone":
-				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<input type="tel" name="p'.$row["id"].'" value="">';
+				echo '<input type="tel" name="p'.$row["id"].'" value=""  placeholder="'.$row["name"].'">';
 				break;
 
 			case 'textarea':
-				echo '<div class="infofield">'.$row["name"].($row["required"] ? '' : '').':</div>
-				<textarea name="p'.$row["id"].'" cols="46" rows="10"></textarea>';
+				echo '<textarea name="p'.$row["id"].'" cols="46" rows="10" placeholder="'.$row["name"].'"></textarea>';
 				break;
 
 			case 'date':

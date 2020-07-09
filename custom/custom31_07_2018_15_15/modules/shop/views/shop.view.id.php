@@ -154,6 +154,9 @@ echo '<!--noindex--><div class="pay_text id_text">'.$this->htmleditor('<insert n
 echo "<h2 class='titleblock'>Доставка</h2>";
 echo '<!--noindex--><div class="dostavka_text id_text">'.$this->htmleditor('<insert name="show_block" id="16" module="site">').'</div><!--/noindex-->';
 
+echo "<h2 class='titleblock'>Самовывоз</h2>";
+echo '<!--noindex--><div class="dostavka_text id_text">'.$this->htmleditor('<insert name="show_block" id="17" module="site">').'</div><!--/noindex-->';
+
 //ссылки на предыдущий и последующий товар
 if (! empty($result["previous"]) || ! empty($result["next"]))
 {
