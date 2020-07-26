@@ -37,11 +37,6 @@ if (! defined('DIAFAN'))
 		</div>
 	</footer>
 	<div class="modalbg"></div>
-	<div class="callbackform">
-		<div class="closedModal">x</div>
-		<div class="title">Задать вопрос</div>
-		<insert name="show_form" module="feedback" site_id="16" template="question">
-	</div>
 	<div class="successtocart">
 		<div class="closedModal">x</div>
 		<div class="title">Товар успешно добавлен в корзину!</div>

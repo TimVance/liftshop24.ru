@@ -38,7 +38,7 @@ if (! defined('DIAFAN'))
 			</div>
 		</div>
 		<div class="bottomheader">
-			<div class="container flexBetween">
+			<div class="container flexBetween contacts-top">
 				<div class="logo"><insert name="show_href" img="img/logo.png" alt="title"></div>
 				<insert name="show_search" module="search">
 				<insert name="show_block" module="site" id="1">
