@@ -2595,7 +2595,8 @@ a.return-back:hover {
     display: block;
 }
 
-.wrapcontacts .feedback_form .error_message {
+.wrapcontacts .feedback_form .error_message,
+.feedback-wrapper .feedback_page .error_message {
     color: red;
     font-size: 12px;
     margin-bottom: 10px;
@@ -2614,4 +2615,15 @@ a.return-back:hover {
 
 .feedback_page textarea {
     padding: 10px;
+}
+
+.feedback_page {
+    max-width: 340px;
+    margin: 20px auto;
+}
+
+.feedback_page textarea,
+.feedback_page input {
+    width: 100%;
+    max-width: 100%;
 }

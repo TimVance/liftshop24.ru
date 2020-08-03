@@ -65,12 +65,11 @@ echo '<div class="js_ab ab block">';
 		echo '<a class="return-back" href="/mp-car/">Назад</a>
     </div>';
 
+    echo '</div>';
 
     echo '</div>';
 
-    echo '<a class="callbacklink" href="#">Заказать обратный звонок</a>';
-
-    echo '</div>';
-
+    echo '<br><br><h2 style="text-align: center">Обратная связь</h2>';
+    echo $this->htmleditor('<insert name="show_form" module="feedback">');
 
 echo '</div>';

@@ -23,4 +23,6 @@ if ($name)
 echo '<div class="sitecontent"><article>';
 $this->functions('show_text');
 echo '</article>';
+echo '<div class="feedback-wrapper">';
 $this->functions('show_module');
+echo '</div>';

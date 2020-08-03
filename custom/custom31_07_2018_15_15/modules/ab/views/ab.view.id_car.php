@@ -39,7 +39,8 @@ echo '<div class="js_ab ab block">';
 
     echo $this->htmleditor('<insert count="9" images_variation="cabina" name="show_block" module="ab" cat_id="4" images="1">');
 
-    echo '<a class="callbacklink" href="#">Заказать обратный звонок</a><br />';
+    echo '<br><br><h2 style="text-align: center">Обратная связь</h2>';
+    echo $this->htmleditor('<insert name="show_form" module="feedback">');
 
 echo '</div>';
 

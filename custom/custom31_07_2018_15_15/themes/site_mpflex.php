@@ -28,7 +28,7 @@ if (! defined('DIAFAN'))
 					<insert name="show_search" module="shop">
 					<insert name="show_viewed" module="viewed" images="1" maxview="3">
 				</div>
-				<div class="right">
+				<div class="right site_mpflex">
 					<insert name="show_body_article">
 				</div>
 			</div>
