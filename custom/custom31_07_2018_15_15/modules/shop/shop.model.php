@@ -1163,9 +1163,22 @@ class Shop_model extends Model
 
 			$this->meta($row);
 
-            $this->result["title_meta"] = str_replace('%article', ' арт. '.$row["article"], $this->result["title_meta"]);
-            $this->result["keywords"] = str_replace('%article', ' арт. '.$row["article"], $this->result["keywords"]);
-            $this->result["descr"] = str_replace('%article', ' арт. '.$row["article"], $this->result["descr"]);
+
+			if (!empty($row["article"])) {
+
+                $this->result["title_meta"] = str_replace('%article', ' арт. '.$row["article"], $this->result["title_meta"]);
+                $this->result["keywords"] = str_replace('%article', ' арт. '.$row["article"], $this->result["keywords"]);
+                $this->result["descr"] = str_replace('%article', ' арт. '.$row["article"], $this->result["descr"]);
+
+            }
+			else {
+
+                $this->result["title_meta"] = str_replace('%article', '', $this->result["title_meta"]);
+                $this->result["keywords"] = str_replace('%article', '', $this->result["keywords"]);
+                $this->result["descr"] = str_replace('%article', '', $this->result["descr"]);
+
+            }
+
 
 			$this->theme_view_element($row);
 

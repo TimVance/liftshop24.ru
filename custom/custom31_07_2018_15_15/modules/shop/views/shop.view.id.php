@@ -175,5 +175,4 @@ if (! empty($result["previous"]) || ! empty($result["next"]))
 echo "</div>";
 
 echo "<h2>Другие товары этой категории</h2>";
-echo $this->htmleditor('<insert name="show_block" module="shop" images="1" count="6" cat_id="'.$result["cat_id"].'">');
-//echo $this->htmleditor('<insert name="show_block_order_rel" module="shop" count="12" images="1">');
+echo $this->htmleditor('<insert name="show_block" module="shop" images="1" count="4" cat_id="'.$result["cat_id"].'">');
