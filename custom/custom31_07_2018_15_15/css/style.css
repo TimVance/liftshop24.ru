@@ -2627,3 +2627,11 @@ a.return-back:hover {
     width: 100%;
     max-width: 100%;
 }
+
+.article.float-images img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    float: left;
+}
